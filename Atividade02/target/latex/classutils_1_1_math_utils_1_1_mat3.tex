@@ -1,0 +1,178 @@
+\doxysection{utils.\+Math\+Utils.\+Mat3 Class Reference}
+\hypertarget{classutils_1_1_math_utils_1_1_mat3}{}\label{classutils_1_1_math_utils_1_1_mat3}\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_a08e25173ae38c8497b1a1ddb70ef520c}{Mat3}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} values)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_a4f3100c836d5650dd2b0dd762092bb78}{get}} (int row, int col)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_ad72db07ad5efdfaa6158b8627c6918c7}{multiplicar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} other)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_a8ebdd4a5a3b3e6972d729ae7a9951afe}{transposta}} ()
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_a148f1bc31edcb63cecfc6293fba84d02}{determinante}} ()
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_a4a1c4d98cf72b41ff334c64ba2457b77}{adicionar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} other)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_a35132321bca60af1e4d82a1b4fa921c1}{subtrair}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} other)
+\item 
+String \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_a2800c59d324ff90c044873287c331745}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3_aa79d4707e4de98b500191eddc2fe099c}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_a08e25173ae38c8497b1a1ddb70ef520c}\label{classutils_1_1_math_utils_1_1_mat3_a08e25173ae38c8497b1a1ddb70ef520c} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!Mat3@{Mat3}}
+\index{Mat3@{Mat3}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{Mat3()}{Mat3()}}
+{\footnotesize\ttfamily utils.\+Math\+Utils.\+Mat3.\+Mat3 (\begin{DoxyParamCaption}\item[{double}]{values\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construtor para criar uma matriz 3x3 com os valores fornecidos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & Uma matriz 3x3 representando os valores da matriz. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se \textquotesingle{}values\textquotesingle{} não for uma matriz 3x3 válida. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_a4a1c4d98cf72b41ff334c64ba2457b77}\label{classutils_1_1_math_utils_1_1_mat3_a4a1c4d98cf72b41ff334c64ba2457b77} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!adicionar@{adicionar}}
+\index{adicionar@{adicionar}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{adicionar()}{adicionar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} utils.\+Math\+Utils.\+Mat3.\+adicionar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Soma esta matriz com outra matriz 3x3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A matriz a ser somada a esta matriz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma nova matriz 3x3 que é o resultado da soma. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se \textquotesingle{}other\textquotesingle{} não for uma matriz 3x3 válida. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_a148f1bc31edcb63cecfc6293fba84d02}\label{classutils_1_1_math_utils_1_1_mat3_a148f1bc31edcb63cecfc6293fba84d02} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!determinante@{determinante}}
+\index{determinante@{determinante}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{determinante()}{determinante()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Mat3.\+determinante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o determinante desta matriz 3x3.
+
+\begin{DoxyReturn}{Returns}
+O valor do determinante da matriz. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_a4f3100c836d5650dd2b0dd762092bb78}\label{classutils_1_1_math_utils_1_1_mat3_a4f3100c836d5650dd2b0dd762092bb78} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!get@{get}}
+\index{get@{get}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Mat3.\+get (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtém o valor na linha e coluna especificadas da matriz.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & A linha da matriz. \\
+\hline
+{\em col} & A coluna da matriz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor na posição (row, col) da matriz. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & Se \textquotesingle{}row\textquotesingle{} ou \textquotesingle{}col\textquotesingle{} estiverem fora dos limites da matriz. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_ad72db07ad5efdfaa6158b8627c6918c7}\label{classutils_1_1_math_utils_1_1_mat3_ad72db07ad5efdfaa6158b8627c6918c7} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!multiplicar@{multiplicar}}
+\index{multiplicar@{multiplicar}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{multiplicar()}{multiplicar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} utils.\+Math\+Utils.\+Mat3.\+multiplicar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplica esta matriz por outra matriz 3x3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A matriz a ser multiplicada por esta matriz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma nova matriz 3x3 que é o resultado da multiplicação. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se \textquotesingle{}other\textquotesingle{} não for uma matriz 3x3 válida. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_a35132321bca60af1e4d82a1b4fa921c1}\label{classutils_1_1_math_utils_1_1_mat3_a35132321bca60af1e4d82a1b4fa921c1} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!subtrair@{subtrair}}
+\index{subtrair@{subtrair}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{subtrair()}{subtrair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} utils.\+Math\+Utils.\+Mat3.\+subtrair (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtrai outra matriz 3x3 desta matriz.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A matriz a ser subtraída desta matriz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma nova matriz 3x3 que é o resultado da subtração. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se \textquotesingle{}other\textquotesingle{} não for uma matriz 3x3 válida. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_a2800c59d324ff90c044873287c331745}\label{classutils_1_1_math_utils_1_1_mat3_a2800c59d324ff90c044873287c331745} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!toString@{toString}}
+\index{toString@{toString}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String utils.\+Math\+Utils.\+Mat3.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_a8ebdd4a5a3b3e6972d729ae7a9951afe}\label{classutils_1_1_math_utils_1_1_mat3_a8ebdd4a5a3b3e6972d729ae7a9951afe} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!transposta@{transposta}}
+\index{transposta@{transposta}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{transposta()}{transposta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat3}{Mat3}} utils.\+Math\+Utils.\+Mat3.\+transposta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula a matriz transposta desta matriz 3x3.
+
+\begin{DoxyReturn}{Returns}
+Uma nova matriz 3x3 que é a transposta desta matriz. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat3_aa79d4707e4de98b500191eddc2fe099c}\label{classutils_1_1_math_utils_1_1_mat3_aa79d4707e4de98b500191eddc2fe099c} 
+\index{utils.MathUtils.Mat3@{utils.MathUtils.Mat3}!data@{data}}
+\index{data@{data}!utils.MathUtils.Mat3@{utils.MathUtils.Mat3}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} utils.\+Math\+Utils.\+Mat3.\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/utils/\mbox{\hyperlink{_math_utils_8java}{Math\+Utils.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,242 @@
+\doxysection{utils.\+Math\+Utils.\+Vec2 Class Reference}
+\hypertarget{classutils_1_1_math_utils_1_1_vec2}{}\label{classutils_1_1_math_utils_1_1_vec2}\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a26cb4bbab625aff3b6c7f18bd567efde}{Vec2}} (double x, double y)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a519fd62d7918995ca82f36988059b36e}{getX}} ()
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a138265c3a7f47d86bff8b22a7a79b0cd}{getY}} ()
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a26371fb8d5a0cd05c10644255cc0377c}{adicionar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} other)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a9e90b6c106c7a61a690a130ed94c63d6}{subtrair}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} other)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a72aedc9217143e8c62496a0019b20043}{multiplicar}} (double escalar)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a34c36aa70adea3cbe62c760fd41fe38d}{produto\+Escalar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} other)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a14948ee6acfba724bdc6636648edd8b6}{produto\+Vetorial}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} other)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a880c5fff572364bc43327d20796eb89c}{comprimento}} ()
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_ad7cab517e22fba5761576bb279d3339f}{normalizar}} ()
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_aff27595bca49d82d27dfaaf50b56b9ee}{angulo\+Entre}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} other)
+\item 
+String \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a65818f1eff48dbd04330bd96c4761f65}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2_a952881224f865990df2226a4a25116be}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a26cb4bbab625aff3b6c7f18bd567efde}\label{classutils_1_1_math_utils_1_1_vec2_a26cb4bbab625aff3b6c7f18bd567efde} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!Vec2@{Vec2}}
+\index{Vec2@{Vec2}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{Vec2()}{Vec2()}}
+{\footnotesize\ttfamily utils.\+Math\+Utils.\+Vec2.\+Vec2 (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construtor para criar um vetor 2D com coordenadas (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & A coordenada x do vetor. \\
+\hline
+{\em y} & A coordenada y do vetor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a26371fb8d5a0cd05c10644255cc0377c}\label{classutils_1_1_math_utils_1_1_vec2_a26371fb8d5a0cd05c10644255cc0377c} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!adicionar@{adicionar}}
+\index{adicionar@{adicionar}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{adicionar()}{adicionar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} utils.\+Math\+Utils.\+Vec2.\+adicionar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Soma este vetor com outro vetor 2D.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor a ser somado a este vetor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um novo vetor que é a soma deste vetor com o outro vetor. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_aff27595bca49d82d27dfaaf50b56b9ee}\label{classutils_1_1_math_utils_1_1_vec2_aff27595bca49d82d27dfaaf50b56b9ee} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!anguloEntre@{anguloEntre}}
+\index{anguloEntre@{anguloEntre}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{anguloEntre()}{anguloEntre()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec2.\+angulo\+Entre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o ângulo entre este vetor e outro vetor em radianos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor com o qual o ângulo será calculado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O ângulo entre os dois vetores em radianos. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+{\em Arithmetic\+Exception} & Se um dos vetores tiver comprimento zero. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a880c5fff572364bc43327d20796eb89c}\label{classutils_1_1_math_utils_1_1_vec2_a880c5fff572364bc43327d20796eb89c} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!comprimento@{comprimento}}
+\index{comprimento@{comprimento}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{comprimento()}{comprimento()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec2.\+comprimento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o comprimento (magnitude) deste vetor.
+
+\begin{DoxyReturn}{Returns}
+O comprimento (magnitude) do vetor. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a519fd62d7918995ca82f36988059b36e}\label{classutils_1_1_math_utils_1_1_vec2_a519fd62d7918995ca82f36988059b36e} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!getX@{getX}}
+\index{getX@{getX}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec2.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtém a coordenada x do vetor.
+
+\begin{DoxyReturn}{Returns}
+A coordenada x do vetor. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a138265c3a7f47d86bff8b22a7a79b0cd}\label{classutils_1_1_math_utils_1_1_vec2_a138265c3a7f47d86bff8b22a7a79b0cd} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!getY@{getY}}
+\index{getY@{getY}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec2.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtém a coordenada y do vetor.
+
+\begin{DoxyReturn}{Returns}
+A coordenada y do vetor. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a72aedc9217143e8c62496a0019b20043}\label{classutils_1_1_math_utils_1_1_vec2_a72aedc9217143e8c62496a0019b20043} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!multiplicar@{multiplicar}}
+\index{multiplicar@{multiplicar}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{multiplicar()}{multiplicar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} utils.\+Math\+Utils.\+Vec2.\+multiplicar (\begin{DoxyParamCaption}\item[{double}]{escalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplica este vetor por um escalar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em escalar} & O escalar pelo qual o vetor será multiplicado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um novo vetor que é o resultado da multiplicação deste vetor pelo escalar. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_ad7cab517e22fba5761576bb279d3339f}\label{classutils_1_1_math_utils_1_1_vec2_ad7cab517e22fba5761576bb279d3339f} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!normalizar@{normalizar}}
+\index{normalizar@{normalizar}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{normalizar()}{normalizar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} utils.\+Math\+Utils.\+Vec2.\+normalizar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Normaliza este vetor, transformando-\/o em um vetor de comprimento 1 na mesma direção. Se o vetor for um vetor de comprimento zero, um vetor nulo é retornado.
+
+\begin{DoxyReturn}{Returns}
+Um novo vetor normalizado. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a34c36aa70adea3cbe62c760fd41fe38d}\label{classutils_1_1_math_utils_1_1_vec2_a34c36aa70adea3cbe62c760fd41fe38d} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!produtoEscalar@{produtoEscalar}}
+\index{produtoEscalar@{produtoEscalar}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{produtoEscalar()}{produtoEscalar()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec2.\+produto\+Escalar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o produto escalar entre este vetor e outro vetor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor com o qual o produto escalar será calculado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor do produto escalar entre os dois vetores. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a14948ee6acfba724bdc6636648edd8b6}\label{classutils_1_1_math_utils_1_1_vec2_a14948ee6acfba724bdc6636648edd8b6} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!produtoVetorial@{produtoVetorial}}
+\index{produtoVetorial@{produtoVetorial}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{produtoVetorial()}{produtoVetorial()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec2.\+produto\+Vetorial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o produto vetorial entre este vetor e outro vetor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor com o qual o produto vetorial será calculado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor do produto vetorial entre os dois vetores. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a9e90b6c106c7a61a690a130ed94c63d6}\label{classutils_1_1_math_utils_1_1_vec2_a9e90b6c106c7a61a690a130ed94c63d6} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!subtrair@{subtrair}}
+\index{subtrair@{subtrair}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{subtrair()}{subtrair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}} utils.\+Math\+Utils.\+Vec2.\+subtrair (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec2}{Vec2}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtrai outro vetor 2D deste vetor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor a ser subtraído deste vetor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um novo vetor que é a subtração deste vetor com o outro vetor. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a65818f1eff48dbd04330bd96c4761f65}\label{classutils_1_1_math_utils_1_1_vec2_a65818f1eff48dbd04330bd96c4761f65} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!toString@{toString}}
+\index{toString@{toString}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String utils.\+Math\+Utils.\+Vec2.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec2_a952881224f865990df2226a4a25116be}\label{classutils_1_1_math_utils_1_1_vec2_a952881224f865990df2226a4a25116be} 
+\index{utils.MathUtils.Vec2@{utils.MathUtils.Vec2}!data@{data}}
+\index{data@{data}!utils.MathUtils.Vec2@{utils.MathUtils.Vec2}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} utils.\+Math\+Utils.\+Vec2.\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/utils/\mbox{\hyperlink{_math_utils_8java}{Math\+Utils.\+java}}\end{DoxyCompactItemize}

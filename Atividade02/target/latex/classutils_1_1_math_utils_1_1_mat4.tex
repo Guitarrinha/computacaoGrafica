@@ -1,0 +1,161 @@
+\doxysection{utils.\+Math\+Utils.\+Mat4 Class Reference}
+\hypertarget{classutils_1_1_math_utils_1_1_mat4}{}\label{classutils_1_1_math_utils_1_1_mat4}\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_a4cd50ffac50c82ac1bbe8a6506121b5c}{Mat4}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} valores)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_ae3709f97e2307bc84923911a16c78787}{obter}} (int linha, int coluna)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_aa572b36fbd17019ae1ed9b1980d51722}{multiplicar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} outra)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_a636e322a1f545355d8a0880111a68485}{transposta}} ()
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_a9d13aec38feef77f8b401d9eab8ffb8b}{adicionar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} outra)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_a04d3ef9eda072bb922568741fd86bd2d}{subtrair}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} outra)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_aa2bafd23b7b6ac18724056bb26da4dd9}{get}} (int linha, int coluna)
+\item 
+String \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_a7beb803193c6edd023b0722b3dbdebb3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4_ada83c57a9bb8fce64d94b48a712fbb84}{dados}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_a4cd50ffac50c82ac1bbe8a6506121b5c}\label{classutils_1_1_math_utils_1_1_mat4_a4cd50ffac50c82ac1bbe8a6506121b5c} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!Mat4@{Mat4}}
+\index{Mat4@{Mat4}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{Mat4()}{Mat4()}}
+{\footnotesize\ttfamily utils.\+Math\+Utils.\+Mat4.\+Mat4 (\begin{DoxyParamCaption}\item[{double}]{valores\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construtor para criar uma matriz 4x4 com os valores fornecidos. 
+\begin{DoxyParams}{Parameters}
+{\em valores} & Uma matriz 4x4 representando os valores da matriz. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se os valores não formarem uma matriz 4x4 válida. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_a9d13aec38feef77f8b401d9eab8ffb8b}\label{classutils_1_1_math_utils_1_1_mat4_a9d13aec38feef77f8b401d9eab8ffb8b} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!adicionar@{adicionar}}
+\index{adicionar@{adicionar}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{adicionar()}{adicionar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} utils.\+Math\+Utils.\+Mat4.\+adicionar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}}}]{outra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Soma esta matriz com outra matriz 4x4. 
+\begin{DoxyParams}{Parameters}
+{\em outra} & A matriz a ser somada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O resultado da adição. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se a outra matriz não for 4x4. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_aa2bafd23b7b6ac18724056bb26da4dd9}\label{classutils_1_1_math_utils_1_1_mat4_aa2bafd23b7b6ac18724056bb26da4dd9} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!get@{get}}
+\index{get@{get}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Mat4.\+get (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_aa572b36fbd17019ae1ed9b1980d51722}\label{classutils_1_1_math_utils_1_1_mat4_aa572b36fbd17019ae1ed9b1980d51722} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!multiplicar@{multiplicar}}
+\index{multiplicar@{multiplicar}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{multiplicar()}{multiplicar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} utils.\+Math\+Utils.\+Mat4.\+multiplicar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}}}]{outra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplica esta matriz por outra matriz 4x4. 
+\begin{DoxyParams}{Parameters}
+{\em outra} & A matriz a ser multiplicada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O resultado da multiplicação. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se a outra matriz não for 4x4. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_ae3709f97e2307bc84923911a16c78787}\label{classutils_1_1_math_utils_1_1_mat4_ae3709f97e2307bc84923911a16c78787} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!obter@{obter}}
+\index{obter@{obter}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{obter()}{obter()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Mat4.\+obter (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtém o valor da matriz em uma posição específica. 
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha desejada. \\
+\hline
+{\em coluna} & A coluna desejada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor na posição especificada. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & Se os índices estiverem fora dos limites da matriz. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_a04d3ef9eda072bb922568741fd86bd2d}\label{classutils_1_1_math_utils_1_1_mat4_a04d3ef9eda072bb922568741fd86bd2d} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!subtrair@{subtrair}}
+\index{subtrair@{subtrair}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{subtrair()}{subtrair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} utils.\+Math\+Utils.\+Mat4.\+subtrair (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}}}]{outra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtrai esta matriz de outra matriz 4x4. 
+\begin{DoxyParams}{Parameters}
+{\em outra} & A matriz a ser subtraída. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O resultado da subtração. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se a outra matriz não for 4x4. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_a7beb803193c6edd023b0722b3dbdebb3}\label{classutils_1_1_math_utils_1_1_mat4_a7beb803193c6edd023b0722b3dbdebb3} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!toString@{toString}}
+\index{toString@{toString}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String utils.\+Math\+Utils.\+Mat4.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_a636e322a1f545355d8a0880111a68485}\label{classutils_1_1_math_utils_1_1_mat4_a636e322a1f545355d8a0880111a68485} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!transposta@{transposta}}
+\index{transposta@{transposta}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{transposta()}{transposta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_mat4}{Mat4}} utils.\+Math\+Utils.\+Mat4.\+transposta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula a transposta desta matriz. \begin{DoxyReturn}{Returns}
+A matriz transposta. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_mat4_ada83c57a9bb8fce64d94b48a712fbb84}\label{classutils_1_1_math_utils_1_1_mat4_ada83c57a9bb8fce64d94b48a712fbb84} 
+\index{utils.MathUtils.Mat4@{utils.MathUtils.Mat4}!dados@{dados}}
+\index{dados@{dados}!utils.MathUtils.Mat4@{utils.MathUtils.Mat4}}
+\doxysubsubsection{\texorpdfstring{dados}{dados}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} utils.\+Math\+Utils.\+Mat4.\+dados\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/utils/\mbox{\hyperlink{_math_utils_8java}{Math\+Utils.\+java}}\end{DoxyCompactItemize}

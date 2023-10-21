@@ -1,0 +1,257 @@
+\doxysection{utils.\+Math\+Utils.\+Vec3 Class Reference}
+\hypertarget{classutils_1_1_math_utils_1_1_vec3}{}\label{classutils_1_1_math_utils_1_1_vec3}\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_a8ebb9a88bc208192c697cced4a8d940f}{Vec3}} (double x, double y, double z)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_af424e913ef689f61af3580879be4effd}{getX}} ()
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_afbad3005330eac3a746821d8285354ca}{getY}} ()
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_aa206f3bb93888a7c426e24d7cd7b5265}{getZ}} ()
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_ae34bb413445d62bdaf3c9bc9a8456bed}{adicionar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} other)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_ab3bd28d56a802e5ec8eb31d29a62b064}{subtrair}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} other)
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_a5d014672b43e2507682313de465204ed}{multiplicar}} (double escalar)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_a9a14da0833f7f44dcb73fa6cfe65d0b9}{produto\+Escalar}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} other)
+\item 
+Math\+Utils.\+Vec3 \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_ad4277f5f4dcaaba2c18d705f3702cd26}{produto\+Vetorial}} (Math\+Utils.\+Vec3 other)
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_ad102b220860be8a56db16ca7a777edbe}{comprimento}} ()
+\item 
+\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_a75ea93e6aad8c8201d19d1a6ba159f76}{normalizar}} ()
+\item 
+double \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_ad161de41a77b5e55c56740b596fe2b06}{angulo\+Entre}} (\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} other)
+\item 
+String \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_a0e037275148b91fa3c2a5e4973fa2a1c}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3_a8ef6e18682d512683a934bb8a1b44e74}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_a8ebb9a88bc208192c697cced4a8d940f}\label{classutils_1_1_math_utils_1_1_vec3_a8ebb9a88bc208192c697cced4a8d940f} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{Vec3()}{Vec3()}}
+{\footnotesize\ttfamily utils.\+Math\+Utils.\+Vec3.\+Vec3 (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construtor para criar um vetor 3D com coordenadas (x, y, z).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & A coordenada x do vetor. \\
+\hline
+{\em y} & A coordenada y do vetor. \\
+\hline
+{\em z} & A coordenada z do vetor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_ae34bb413445d62bdaf3c9bc9a8456bed}\label{classutils_1_1_math_utils_1_1_vec3_ae34bb413445d62bdaf3c9bc9a8456bed} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!adicionar@{adicionar}}
+\index{adicionar@{adicionar}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{adicionar()}{adicionar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} utils.\+Math\+Utils.\+Vec3.\+adicionar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Soma este vetor com outro vetor 3D.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor a ser somado a este vetor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um novo vetor que é a soma deste vetor com o outro vetor. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_ad161de41a77b5e55c56740b596fe2b06}\label{classutils_1_1_math_utils_1_1_vec3_ad161de41a77b5e55c56740b596fe2b06} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!anguloEntre@{anguloEntre}}
+\index{anguloEntre@{anguloEntre}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{anguloEntre()}{anguloEntre()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec3.\+angulo\+Entre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o ângulo entre este vetor e outro vetor em radianos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor com o qual o ângulo será calculado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O ângulo entre os dois vetores em radianos. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+{\em Arithmetic\+Exception} & Se um dos vetores tiver comprimento zero. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_ad102b220860be8a56db16ca7a777edbe}\label{classutils_1_1_math_utils_1_1_vec3_ad102b220860be8a56db16ca7a777edbe} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!comprimento@{comprimento}}
+\index{comprimento@{comprimento}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{comprimento()}{comprimento()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec3.\+comprimento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o comprimento (magnitude) deste vetor.
+
+\begin{DoxyReturn}{Returns}
+O comprimento (magnitude) do vetor. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_af424e913ef689f61af3580879be4effd}\label{classutils_1_1_math_utils_1_1_vec3_af424e913ef689f61af3580879be4effd} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!getX@{getX}}
+\index{getX@{getX}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec3.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtém a coordenada x do vetor.
+
+\begin{DoxyReturn}{Returns}
+A coordenada x do vetor. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_afbad3005330eac3a746821d8285354ca}\label{classutils_1_1_math_utils_1_1_vec3_afbad3005330eac3a746821d8285354ca} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!getY@{getY}}
+\index{getY@{getY}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec3.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtém a coordenada y do vetor.
+
+\begin{DoxyReturn}{Returns}
+A coordenada y do vetor. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_aa206f3bb93888a7c426e24d7cd7b5265}\label{classutils_1_1_math_utils_1_1_vec3_aa206f3bb93888a7c426e24d7cd7b5265} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!getZ@{getZ}}
+\index{getZ@{getZ}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{getZ()}{getZ()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec3.\+getZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtém a coordenada z do vetor.
+
+\begin{DoxyReturn}{Returns}
+A coordenada z do vetor. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_a5d014672b43e2507682313de465204ed}\label{classutils_1_1_math_utils_1_1_vec3_a5d014672b43e2507682313de465204ed} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!multiplicar@{multiplicar}}
+\index{multiplicar@{multiplicar}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{multiplicar()}{multiplicar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} utils.\+Math\+Utils.\+Vec3.\+multiplicar (\begin{DoxyParamCaption}\item[{double}]{escalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplica este vetor por um escalar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em escalar} & O escalar pelo qual o vetor será multiplicado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um novo vetor que é o resultado da multiplicação deste vetor pelo escalar. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_a75ea93e6aad8c8201d19d1a6ba159f76}\label{classutils_1_1_math_utils_1_1_vec3_a75ea93e6aad8c8201d19d1a6ba159f76} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!normalizar@{normalizar}}
+\index{normalizar@{normalizar}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{normalizar()}{normalizar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} utils.\+Math\+Utils.\+Vec3.\+normalizar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Normaliza este vetor, transformando-\/o em um vetor de comprimento 1 na mesma direção. Se o vetor for um vetor de comprimento zero, um vetor nulo é retornado.
+
+\begin{DoxyReturn}{Returns}
+Um novo vetor normalizado. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_a9a14da0833f7f44dcb73fa6cfe65d0b9}\label{classutils_1_1_math_utils_1_1_vec3_a9a14da0833f7f44dcb73fa6cfe65d0b9} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!produtoEscalar@{produtoEscalar}}
+\index{produtoEscalar@{produtoEscalar}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{produtoEscalar()}{produtoEscalar()}}
+{\footnotesize\ttfamily double utils.\+Math\+Utils.\+Vec3.\+produto\+Escalar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o produto escalar entre este vetor e outro vetor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor com o qual o produto escalar será calculado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor do produto escalar entre os dois vetores. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_ad4277f5f4dcaaba2c18d705f3702cd26}\label{classutils_1_1_math_utils_1_1_vec3_ad4277f5f4dcaaba2c18d705f3702cd26} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!produtoVetorial@{produtoVetorial}}
+\index{produtoVetorial@{produtoVetorial}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{produtoVetorial()}{produtoVetorial()}}
+{\footnotesize\ttfamily Math\+Utils.\+Vec3 utils.\+Math\+Utils.\+Vec3.\+produto\+Vetorial (\begin{DoxyParamCaption}\item[{Math\+Utils.\+Vec3}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calcula o produto vetorial entre este vetor e outro vetor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor com o qual o produto vetorial será calculado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um novo vetor que é o resultado do produto vetorial entre este vetor e o outro vetor. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_ab3bd28d56a802e5ec8eb31d29a62b064}\label{classutils_1_1_math_utils_1_1_vec3_ab3bd28d56a802e5ec8eb31d29a62b064} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!subtrair@{subtrair}}
+\index{subtrair@{subtrair}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{subtrair()}{subtrair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}} utils.\+Math\+Utils.\+Vec3.\+subtrair (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classutils_1_1_math_utils_1_1_vec3}{Vec3}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtrai outro vetor 3D deste vetor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O vetor a ser subtraído deste vetor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um novo vetor que é a subtração deste vetor com o outro vetor. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Se o vetor \textquotesingle{}other\textquotesingle{} for nulo. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_a0e037275148b91fa3c2a5e4973fa2a1c}\label{classutils_1_1_math_utils_1_1_vec3_a0e037275148b91fa3c2a5e4973fa2a1c} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!toString@{toString}}
+\index{toString@{toString}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String utils.\+Math\+Utils.\+Vec3.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1_math_utils_1_1_vec3_a8ef6e18682d512683a934bb8a1b44e74}\label{classutils_1_1_math_utils_1_1_vec3_a8ef6e18682d512683a934bb8a1b44e74} 
+\index{utils.MathUtils.Vec3@{utils.MathUtils.Vec3}!data@{data}}
+\index{data@{data}!utils.MathUtils.Vec3@{utils.MathUtils.Vec3}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} utils.\+Math\+Utils.\+Vec3.\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/utils/\mbox{\hyperlink{_math_utils_8java}{Math\+Utils.\+java}}\end{DoxyCompactItemize}
