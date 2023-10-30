@@ -1,0 +1,119 @@
+\doxysection{img\+Functions.\+OBJLoader Class Reference}
+\hypertarget{classimg_functions_1_1_o_b_j_loader}{}\label{classimg_functions_1_1_o_b_j_loader}\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_a5c401adffe38de34fd7c2e27af73a365}{OBJLoader}} (@Not\+Null String caminho\+Arquivo)
+\item 
+List$<$ float\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_a21a4133d7d41a5cb9e77d477845141ca}{get\+Vertices}} ()
+\item 
+List$<$ float\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_a064a5cd9829a6aeca9becbfd61356478}{get\+Normais}} ()
+\item 
+List$<$ float\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_ae4248a3502d90599794755808aa7cddb}{get\+Coordenadas\+Textura}} ()
+\item 
+List$<$ int\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_af43cd6610fb71587c6e3deb5e7c2837a}{get\+Faces}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_a96b64a083373179e27905e717f390312}{carregar\+OBJ}} (@Not\+Null String caminho\+Arquivo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ float\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_a57c1550e1656b8121407dc3eb0a8ff9a}{vertices}}
+\item 
+List$<$ float\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_a477e2ccc01b3632abce237444afe179d}{normais}}
+\item 
+List$<$ float\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_a9f48201f37a507557d53ce3fd8b23173}{coordenadas\+Textura}}
+\item 
+List$<$ int\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classimg_functions_1_1_o_b_j_loader_affca6d6b1daed378b872f6848c0ac60b}{faces}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_a5c401adffe38de34fd7c2e27af73a365}\label{classimg_functions_1_1_o_b_j_loader_a5c401adffe38de34fd7c2e27af73a365} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!OBJLoader@{OBJLoader}}
+\index{OBJLoader@{OBJLoader}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{OBJLoader()}{OBJLoader()}}
+{\footnotesize\ttfamily img\+Functions.\+OBJLoader.\+OBJLoader (\begin{DoxyParamCaption}\item[{@Not\+Null String}]{caminho\+Arquivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cria uma instância de OBJLoader e carrega um arquivo OBJ especificado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caminho\+Arquivo} & O caminho para o arquivo OBJ a ser carregado. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_a96b64a083373179e27905e717f390312}\label{classimg_functions_1_1_o_b_j_loader_a96b64a083373179e27905e717f390312} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!carregarOBJ@{carregarOBJ}}
+\index{carregarOBJ@{carregarOBJ}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{carregarOBJ()}{carregarOBJ()}}
+{\footnotesize\ttfamily void img\+Functions.\+OBJLoader.\+carregar\+OBJ (\begin{DoxyParamCaption}\item[{@Not\+Null String}]{caminho\+Arquivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Carrega um arquivo OBJ e extrai dados como vértices, normais, coordenadas de textura e faces. Os dados são armazenados nas listas correspondentes para uso posterior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caminho\+Arquivo} & O caminho para o arquivo OBJ a ser carregado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_ae4248a3502d90599794755808aa7cddb}\label{classimg_functions_1_1_o_b_j_loader_ae4248a3502d90599794755808aa7cddb} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!getCoordenadasTextura@{getCoordenadasTextura}}
+\index{getCoordenadasTextura@{getCoordenadasTextura}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{getCoordenadasTextura()}{getCoordenadasTextura()}}
+{\footnotesize\ttfamily List$<$ float\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+get\+Coordenadas\+Textura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_af43cd6610fb71587c6e3deb5e7c2837a}\label{classimg_functions_1_1_o_b_j_loader_af43cd6610fb71587c6e3deb5e7c2837a} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!getFaces@{getFaces}}
+\index{getFaces@{getFaces}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{getFaces()}{getFaces()}}
+{\footnotesize\ttfamily List$<$ int\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+get\+Faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_a064a5cd9829a6aeca9becbfd61356478}\label{classimg_functions_1_1_o_b_j_loader_a064a5cd9829a6aeca9becbfd61356478} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!getNormais@{getNormais}}
+\index{getNormais@{getNormais}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{getNormais()}{getNormais()}}
+{\footnotesize\ttfamily List$<$ float\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+get\+Normais (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_a21a4133d7d41a5cb9e77d477845141ca}\label{classimg_functions_1_1_o_b_j_loader_a21a4133d7d41a5cb9e77d477845141ca} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!getVertices@{getVertices}}
+\index{getVertices@{getVertices}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{getVertices()}{getVertices()}}
+{\footnotesize\ttfamily List$<$ float\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_a9f48201f37a507557d53ce3fd8b23173}\label{classimg_functions_1_1_o_b_j_loader_a9f48201f37a507557d53ce3fd8b23173} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!coordenadasTextura@{coordenadasTextura}}
+\index{coordenadasTextura@{coordenadasTextura}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{coordenadasTextura}{coordenadasTextura}}
+{\footnotesize\ttfamily List$<$float\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+coordenadas\+Textura\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_affca6d6b1daed378b872f6848c0ac60b}\label{classimg_functions_1_1_o_b_j_loader_affca6d6b1daed378b872f6848c0ac60b} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!faces@{faces}}
+\index{faces@{faces}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{faces}{faces}}
+{\footnotesize\ttfamily List$<$int\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+faces\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_a477e2ccc01b3632abce237444afe179d}\label{classimg_functions_1_1_o_b_j_loader_a477e2ccc01b3632abce237444afe179d} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!normais@{normais}}
+\index{normais@{normais}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{normais}{normais}}
+{\footnotesize\ttfamily List$<$float\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+normais\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classimg_functions_1_1_o_b_j_loader_a57c1550e1656b8121407dc3eb0a8ff9a}\label{classimg_functions_1_1_o_b_j_loader_a57c1550e1656b8121407dc3eb0a8ff9a} 
+\index{imgFunctions.OBJLoader@{imgFunctions.OBJLoader}!vertices@{vertices}}
+\index{vertices@{vertices}!imgFunctions.OBJLoader@{imgFunctions.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{vertices}{vertices}}
+{\footnotesize\ttfamily List$<$float\mbox{[}$\,$\mbox{]}$>$ img\+Functions.\+OBJLoader.\+vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/img\+Functions/\mbox{\hyperlink{_o_b_j_loader_8java}{OBJLoader.\+java}}\end{DoxyCompactItemize}
